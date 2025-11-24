@@ -5,7 +5,7 @@ import ElectricBorder from '../../components/ElectricBorder/ElectricBorder'
 function Login() {
   return (
     <>
-      <main>
+      <div className='main'>
         <div className="background">
           <Lightning
             hue={220}
@@ -33,14 +33,14 @@ function Login() {
           >
             <div className='formlogin'>
                 <h2>Login</h2>
-                <form>
+                <form className='form-login'>
                     <input type="text" placeholder="Email" />
                     <input type="password" name="senha" id="senha" placeholder='Senha'/>
                     <button>Entrar</button>
                 </form>
             </div>
           </ElectricBorder>
-      </main>
+      </div>
     </>
   )
 }

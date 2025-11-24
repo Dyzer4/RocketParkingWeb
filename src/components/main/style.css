@@ -1,0 +1,123 @@
+@import url('../../index.css');
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contentCarros {          
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;     
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-add {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-add input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: cyan;
+    border: 1px solid cyan;
+}
+
+.form-add input:focus {
+    outline-style: ridge;
+    outline-color: cyan;
+}
+
+.form-add input::placeholder {
+    color: cyan;
+}
+
+.form-add button {
+    background-color: cyan;
+    border: none;
+    padding: 10px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    color: cyan;
+    text-align: center;
+    padding: 0;
+}
+
+.carlist {
+    height: 100%;
+    width: 100%;
+}
+
+.caritem{
+    border: 1px solid cyan;
+    border-top: none;
+    border-right: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 20px;
+    color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-saida{
+    background-color: transparent;
+    border: 1px solid cyan;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-saida:hover{
+    transform: scale(1.3, 1.3);
+}
+
+.btn-saida img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width:800px) {
+    .contentCarros {
+        padding: 20px;
+    }
+
+    .content {
+        gap: 10px;
+    }
+
+    .form-add input {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
