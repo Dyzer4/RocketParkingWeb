@@ -10,15 +10,13 @@ main {
 
 .contentCarros {          
     width: 90%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 40px;
     border-radius: 10px;
 }
 
-.content {
-    flex: 1;     
+.content {    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -72,42 +70,11 @@ h2 {
 }
 
 .carlist {
-    height: 100%;
     width: 100%;
-    overflow-y: auto;              
-    scrollbar-width: thin;         
-    scrollbar-color: cyan transparent;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.carlist {
-    scrollbar-width: thin;
-    scrollbar-color: cyan rgba(0,255,255,0.15);
-} */
-
-
- .carlist::-webkit-scrollbar {
-    width: 8px;
-}
-
-.carlist::-webkit-scrollbar-track {
-    background: rgba(0,255,255,0.08);
-    border-radius: 4px;
-}
-
-.carlist::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, cyan 0%, #0bb 100%);
-    border-radius: 4px;
-    box-shadow: 0 0 6px rgba(0,255,255,0.6);
-}
-
-.carlist::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #8ff 0%, cyan 100%);
-}
-
-.carlist:where(:not(:hover))::-webkit-scrollbar-thumb {
-    background: rgba(0,255,255,0.4);
-}
 
 .caritem{
     border: 1px solid cyan;
@@ -126,7 +93,7 @@ h2 {
 .btn-saida{
     background-color: transparent;
     border: 1px solid cyan;
-    padding: 0;
+    padding: 5px;
     cursor: pointer;
     transition: 0.2s;
 }
