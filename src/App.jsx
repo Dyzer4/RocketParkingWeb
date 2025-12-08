@@ -1,5 +1,5 @@
 import './App.css'
-import { Modal } from './components/modal/index.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cadastro from './pages/cadasto/Cadastro.jsx'
 import Dashboard from './pages/dashboard/Dashboard.jsx'
 import Login from './pages/login/login.jsx'
@@ -7,10 +7,14 @@ import Login from './pages/login/login.jsx'
 
 function App() {
   return (
-    <>
-      <Dashboard />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   )
-}
+} 
 
 export default App

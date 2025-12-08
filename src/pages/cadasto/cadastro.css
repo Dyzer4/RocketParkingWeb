@@ -1,0 +1,34 @@
+.contentcadastro {
+  width: 20%;
+  height: 50%;
+  z-index: 1;
+  border-radius: 16px;
+}
+
+.formcadastro{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.form-cadastro {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.linkbuttonlogin {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 150px;
+}

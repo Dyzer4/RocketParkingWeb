@@ -31,6 +31,8 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  position: relative;
+  height: 100%;
 }
 
 .form-login {
@@ -55,4 +57,13 @@ button {
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.linkbutton {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 150px;
 }

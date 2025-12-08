@@ -1,6 +1,6 @@
 import { Header } from "../../components/header"
 import { Main } from "../../components/main"
-import './style.css'
+import './dashboard.css'
 
 function Dashboard() {
     return (

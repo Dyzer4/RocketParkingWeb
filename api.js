@@ -14,13 +14,13 @@ if (token) {
     api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 }
 
-export const login = async (email, password) => {
-    const response = await api.post('/auth/login', { email, password });
+export const login = async (email, senha) => {
+    const response = await api.post('/auth/login', { email, senha });
     return response.data;
 }
 
-export const register = async (name, email, password) => {
-    const response = await api.post('/auth/register', { name, email, password });
+export const register = async (nome, email, senha) => {
+    const response = await api.post('/auth/register', { nome, email, senha });
     return response.data;
 }
 

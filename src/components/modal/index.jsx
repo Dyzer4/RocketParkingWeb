@@ -1,4 +1,4 @@
-import './style.css';
+import './modal.css';
 
 export function Modal ({ img, title, dataEntrada, dataSaida, horarioEntrada, horarioSaida, valorTotal, onClose }) {
     return (
