@@ -40,7 +40,7 @@ function Cadastro() {
 
   return (
     <>
-      <main>
+      <div className='cadastromain'>
         <div className="background">
           <Lightning
             hue={220}
@@ -67,7 +67,7 @@ function Cadastro() {
         >
           <div className='formcadastro'>
             <h2>Cadastro</h2>
-            <form onSubmit={handleCadastro}>
+            <form onSubmit={handleCadastro} className='form-cadastro'>
               <input 
                 type="text" 
                 placeholder='Nome'
@@ -99,7 +99,7 @@ function Cadastro() {
             </button>
           </div>
         </ElectricBorder>
-      </main>
+      </div>
     </>
   )
 }
