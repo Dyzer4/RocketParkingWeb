@@ -49,7 +49,7 @@
     text-align: center;
 }
 
-.modal-content p:nth-last-of-type(1) {
+#valortotal {
     font-size: 20px;
     font-weight: bold;
     align-self: center;

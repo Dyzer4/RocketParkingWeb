@@ -164,7 +164,7 @@ export const Main = () => {
                     dataSaida={selectedCar.veiculo?.dataSaida}
                     horarioEntrada={selectedCar.veiculo?.horarioEntrada}
                     horarioSaida={selectedCar.veiculo?.horarioSaida}
-                    valorTotal={`R$ ${selectedCar.veiculo?.valorPago},00`}
+                    valorTotal={selectedCar.veiculo?.dataSaida ? `R$ ${selectedCar.veiculo?.valorPago},00` : null}
                     onClose={closeModal}
                 />
             )}
